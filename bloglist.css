@@ -1,0 +1,148 @@
+/* cyrillic */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyzCg_WMM.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyxig_WMM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(https://fonts.gstatic.com/s/marckscript/v8/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v8/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+body{
+    background-color:#6db0b8 !important;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 500px;
+  height: 150px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.innerLeft{
+    background-color: white;
+    float:left;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.innerRight{
+    height: 100%;
+    background-color: rgb(206, 198, 198);
+    font-size: 14px;
+    line-height: normal;
+}
+
+.rightHead{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rightBottom{
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.2em;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.close{
+    padding-top: 10px !important;
+    padding-right: 20px !important;
+    cursor: pointer; 
+}
+
+.container{
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  width: 500px;
+  margin-top: 300px;
+}
+
+.deletebtn{
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 90%;
+  background: black;
+  color: #fff;
+  float: left;                  
+  margin: 10px 0px 10px 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.cancelbtn{
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 90%;
+  background: black;
+  color: #fff;
+  float: right;               
+  margin: 10px 100px 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#threeDot{
+  margin-left: 340px;
+  margin-top: -30px;
+  cursor: pointer;
+  color: #676363;
+}
+
+.modal-title{
+  margin-left: auto;
+  font-weight: bold;
+}
+
+#sup{
+  color: black;
+}

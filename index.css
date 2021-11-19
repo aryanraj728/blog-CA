@@ -1,0 +1,37 @@
+body{
+   background: url("img.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+body, html{
+   height: 99.3%;
+}
+.centerButton{
+	height: 50px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.homeButton{
+    background-color: black;
+    height: 100%;
+    font-weight: bolder;
+    color:white;
+}
+
+#cbutton{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 180px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rupxUpYtvBxVJNXbFcPc3o8KgmLBbJT06rXRMkvguQQ53cScBza-3mV-8OTeDVtw9zcGbckUrczxn3wzKqYkscmFI9-QWHiAxOfJXWpbzFCZTcfennOE3hoUIOkEMrJSJHghJqpaoYR0ppJN9vunKLfVxmZlscZ3Bf3mwN5Yj8ilXTztvPfGmyDO5QLS6GU3Q8cYqaOqsyTWLBYmOuHBWYn3iuAITHcGHsaboGaV3YG0UWW6inpDWSWICrUkS_X7iDILqCMMmXa0gRT_iezGFTf_pcSsXeCkaO25pmFA32Cgtnb0Zsf0RbPiWqUp80cr6bppA-llUmdIhKrdy8QpUw" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="post.js"></script>
+    <link href='post.css' rel='stylesheet' type='text/css'>
+    <link href='Font.css' rel='stylesheet' type='text/css'>
+    <script src="header.js"></script>
+    <link href='header.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--Header Start-->
+    <!--Logo and Tag Line-->
+    <div class="header">
+        <p style="color: black;" id="pageTitle" class="logo-title">Biographer</p>
+        <p class="middleText">Explore Inspiring biography</p>
+    </div>
+    <!--Sign In and Sign Up buttons-->
+    <button style="margin: -90px 110px 10px 0px;" type="button" class="topButtons" data-toggle="modal"
+        data-target="#exampleModal" id="sign-in-button">
+        Sign In
+    </button>
+    <button style="margin: -90px 10px 0px 0px;" type="button" class="topButtons" data-toggle="modal"
+        data-target="#exampleModalSignUp" id="sign-up-button">
+        Sign Up
+    </button>
+    <!--Sign In Form-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+                    <button type="button" id="cls" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password" required>
+                        </div>
+
+                        <button id="fbutton" type="submit" class="btn btn-primary">Sign
+                            In</button>
+                        <div align="center">
+                            <strong>Not a Member? <a id="sup" onclick="linkSignup()">Sign Up</a></strong>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sign Up Form-->
+    <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Full Name</label>
+                            <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailName"
+                                placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Enter Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                placeholder="Confirm Password" required>
+
+                        </div>
+                        <button id="fbutton" type="submit" class="btn btn-primary">Sign
+                            Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Header End-->
+
+    <!--Main Heading-->
+    <h3 id="pHead">Jeff Bezos Biography</h3>
+
+    <!--Name at left-->
+    <p id="pAuthor">
+        Jeff Bezos 
+    </p>
+
+    <!--Edit button to edit the paragraph-->
+    <button id="editBtn" onclick="editPara()">
+        Edit <i class="fa fa-pencil"></i>
+    </button>
+
+    <!--Save button to save the edited paragraph-->
+    <button id="saveBtn" onclick="savePara()">
+        Save <i class="fa fa-save"></i>
+    </button>
+    <br>
+    <br>
+
+    <!--Editable Paragraph-->
+    <p id="editP">
+        Jeffrey Preston Bezos (Born January 12, 1964) is an American entrepreneur, media proprietor, investor, and computer engineer. He is the founder and executive chairman of Amazon, where he previously served as the president and CEO. With a net worth of around US$204 billion as of November 2021, he is the second-wealthiest person in the world according to both Forbes and Bloomberg's Billionaires Index.[2][3]
+Born in Albuquerque and raised in Houston and Miami, Bezos graduated from Princeton University in 1986. He holds a degree in electrical engineering and computer science. He worked on Wall Street in a variety of related fields from 1986 to early 1994. Bezos founded Amazon in late 1994, on a cross-country road trip from New York City to Seattle. The company began as an online bookstore and has since expanded to a wide variety of other e-commerce products and services, including video and audio streaming, cloud computing, and artificial intelligence. It is currently the world's largest online sales company, the largest Internet company by revenue, and the world's largest provider of virtual assistants[4] and cloud infrastructure services through its Amazon Web Services branch.
+Bezos founded the aerospace manufacturer and sub-orbital spaceflight services company Blue Origin in 2000. Blue Origin's New Shepard vehicle reached space in 2015, and afterwards successfully landed back on Earth. The company began commercial suborbital human spaceflight,[5] and did two successful human spaceflights in 2021. He also purchased the major American newspaper The Washington Post in 2013 for $250 million, and manages many other investments through his venture capital firm, Bezos Expeditions. In September 2021, Bezos co-founded biotechnology company Altos Labs with Mail.ru founder Yuri Milner.[6]
+The first centibillionaire on the Forbes wealth index, Bezos was named the "richest man in modern history" after his net worth increased to $150 billion in July 2018.[8] In August 2020, according to Forbes, he had a net worth exceeding $200 billion.[9] In 2020 during the COVID-19 pandemic, Bezos's wealth grew by approximately $24 billion.[10] On July 5, 2021, Bezos stepped down as the CEO of Amazon and transitioned into the role of executive chairman; Andy Jassy, the chief of Amazon's cloud computing division,[11][12] replaced Bezos as the CEO of Amazon. On July 20, 2021, Jeff Bezos flew to space alongside his brother Mark.[13] The suborbital flight lasted over 10 minutes, reaching a peak altitude of 66.5 miles (107.0 km).[14]
+    </p>
+
+    <!--Like Button and number of likes-->
+    <button id="likeBtn" onclick="likeOne()">
+        <span class="iconify" data-icon="simple-line-icons:like" data-inline="false"></span> Like
+    </button>
+    <p id="likePara">Be the first one to like this!</p>
+
+    <!-- Get Comment and Display-->
+    <textarea id="comment" onfocus="this.value=''" rows="2" cols="170%" placeholder="Leave a comment..."></textarea>
+    <br>
+    <button id="addList" onclick="addComments(comment)">Comment</button>
+    <div id="commentBox">
+        <p id="allCom">
+            <strong>All Comments</strong>
+        </p>
+        <div id="addEventNames"></div>
+    </div>
